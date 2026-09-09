@@ -1,1 +1,25 @@
+# Dataset
 
+This folder is reserved for the dataset used for training and developing the LAWPRO Indian legal AI system.
+
+The original training dataset is **not included in this GitHub repository because of its large file size**.
+
+The dataset contains Indian legal-domain information used to adapt the AI model for legal question answering.
+
+## Dataset Details
+
+- **Format:** JSONL (JSON Lines)
+- **Rows/Records:21,576
+- **File Size:** Approximately 52 MB
+- **Purpose:** Training and development of the Indian legal AI model
+
+### First Record / Sample
+
+A sample of the first record is shown below:
+
+```json
+{
+  "instruction": "Your first instruction/question here",
+  "input": "Your first input here",
+  "output": "Your first answer here"
+}
