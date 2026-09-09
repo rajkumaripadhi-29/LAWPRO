@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LawPro - Knowledge of the Indian Constitution</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Advanced Opening Animation -->
+    <div id="intro-container">
+        <div class="court-background">
+            <div class="court-overlay"></div>
+        </div>
+
+        <!-- Ashoka Symbol -->
+        <div class="ashoka-container" id="ashoka">
+            <div class="ashoka-symbol">
+                <div class="ashoka-circle">
+                    <img src="asset/pngegg.png" alt="Ashoka Lion" class="ashoka-image" />
+                </div>
+                <div class="rotating-ring"></div>
+            </div>
+        </div>
+
+        <!-- Gavel -->
+        <div class="gavel-container" id="gavel-container">
+            <div class="gavel" id="gavel">
+                <img src="asset/hammer.png" alt="Judge Gavel" class="gavel-image" />
+            </div>
+            <div class="impact-effect" id="impact"></div>
+        </div>
+
+        <!-- Screen Split -->
+        <div class="split-left" id="split-left"></div>
+        <div class="split-right" id="split-right"></div>
+        <div class="split-line" id="split-line"></div>
+    </div>
+
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button class="new-chat-btn" id="new-chat-btn" aria-label="Start a new chat">
+                    <i class="fas fa-plus" aria-hidden="true"></i>
+                    <span>New Chat</span>
+                </button>
+            </div>
+
+            <div class="history-section">
+                <div class="history-group">
+                    <h3>Today</h3>
+                    <ul class="history-list">
+                        <li class="active"><i class="far fa-message" aria-hidden="true"></i> Article 21 Explanation</li>
+                        <li><i class="far fa-message" aria-hidden="true"></i> Fundamental Duties List</li>
+                        <li><i class="far fa-message" aria-hidden="true"></i> Right to Equality vs...</li>
+                    </ul>
+                </div>
+
+                <div class="history-group">
+                    <h3>Yesterday</h3>
+                    <ul class="history-list">
+                        <li><i class="far fa-message" aria-hidden="true"></i> Preamble Summary</li>
+                        <li><i class="far fa-message" aria-hidden="true"></i> Emergency Provisions</li>
+                    </ul>
+                </div>
+
+                <div class="history-group">
+                    <h3>Previous 7 Days</h3>
+                    <ul class="history-list">
+                        <li><i class="far fa-message" aria-hidden="true"></i> Article 370 History</li>
+                        <li><i class="far fa-message" aria-hidden="true"></i> Drafting Committee Members</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aditi" alt="User Avatar" class="avatar">
+                    <div class="user-info">
+                        <span class="user-name">Aditi Sharma</span>
+                        <span class="user-plan">Free Plan</span>
+                    </div>
+                    <i class="fas fa-ellipsis-h more-icon" aria-hidden="true"></i>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-left">
+                    <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar"
+                        aria-expanded="false">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <button id="back-btn" class="back-btn hidden" aria-label="Go back to welcome screen">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                    </button>
+                    <div class="model-selector" role="button" aria-haspopup="listbox" aria-expanded="false"
+                        tabindex="0">
+                        <span>LawPro</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <!-- Placeholder for extra actions -->
+                </div>
+            </header>
+
+            <div class="chat-container">
+                <!-- Welcome Screen -->
+                <div class="welcome-screen" id="welcome-screen">
+                    <div class="welcome-logo" aria-hidden="true">
+                        <img src="asset/3heads.png" alt="Logo" class="logo-img">
+                    </div>
+                    <h1>How can I help you understand the Indian Constitution?</h1>
+
+                    <div class="suggestion-grid">
+                        <div class="suggestion-card" data-prompt="Explain Article 21" role="button" tabindex="0"
+                            aria-label="Explain Article 21: Protection of Life and Personal Liberty"
+                            style="animation-delay: 0.1s;">
+                            <h3>Explain Article 21</h3>
+                            <p>Protection of Life and Personal Liberty</p>
+                        </div>
+                        <div class="suggestion-card" data-prompt="What are Fundamental Rights?" role="button"
+                            tabindex="0"
+                            aria-label="What are Fundamental Rights?: List all 6 fundamental rights categories"
+                            style="animation-delay: 0.2s;">
+                            <h3>What are Fundamental Rights?</h3>
+                            <p>List all 6 fundamental rights categories</p>
+                        </div>
+                        <div class="suggestion-card" data-prompt="Directive Principles" role="button" tabindex="0"
+                            aria-label="Directive Principles: Overview of Part IV of the Constitution"
+                            style="animation-delay: 0.3s;">
+                            <h3>Directive Principles</h3>
+                            <p>Overview of Part IV of the Constitution</p>
+                        </div>
+                        <div class="suggestion-card" data-prompt="Amendments Process" role="button" tabindex="0"
+                            aria-label="Amendments Process: How can the Constitution be amended?"
+                            style="animation-delay: 0.4s;">
+                            <h3>Amendments Process</h3>
+                            <p>How can the Constitution be amended?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message List -->
+                <div class="message-list" id="message-list">
+                    <!-- Messages will appear here -->
+                </div>
+            </div>
+
+            <footer class="interaction-area">
+                <div class="input-container" id="input-container">
+                    <div class="input-wrapper">
+                        <textarea id="chat-input" placeholder="Message LawPro Chatbot..." rows="1"
+                            aria-label="Message LawPro Chatbot"></textarea>
+                        <div class="input-actions">
+                            <button id="voice-btn" class="action-btn" title="Voice input" aria-label="Voice input"><i
+                                     class="fas fa-microphone" aria-hidden="true"></i></button>
+                            <button id="send-btn" class="send-btn" disabled aria-label="Send message">
+                                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="disclaimer">LawPro can make mistakes. Consider checking important information
+                        against the official Constitution of India text.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
